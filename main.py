@@ -1,12 +1,19 @@
 import sys
 import math
 
+def calculateDistance(x1,y1,x2,y2):  
+     dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)  
+     return dist 
+
+
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
 
 num_sites = int(input())
 for i in range(num_sites):
     site_id, x, y, radius = [int(j) for j in input().split()]
+
+
 
 # game loop
 while True:
